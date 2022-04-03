@@ -1,0 +1,54 @@
+.crypto-image img {
+  height: 30px;
+  width: auto;
+}
+
+.cryptocards {
+  font-size: 20px;
+  height: 75px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: rgba(255, 255, 255, 0.65);
+  box-shadow: 0 1px 1px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 7px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: transform 0.2s; /* Animation */
+  li {
+    list-style: none;
+    display: inline-block;
+    justify-content: space-evenly;
+  }
+  ul {
+    display: flex;
+  }
+  margin: 1px;
+}
+
+tbody > tr:hover {
+  // box-shadow: 0 2px 2px 0 rgba(31, 38, 135, 0.37);
+  // backdrop-filter: blur(4px);
+  // webkit-backdrop-filter: blur(4px);
+  border-radius: 7px;
+  // border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  transform: scale(1.01);
+}
+
+// Logic to display red or green for price change
+.red-font {
+  color: #cf1f30;
+}
+.green-font {
+  color: #088551;
+}
+// Cursor turns to hand pointer on hover over row
+.clicking td {
+  cursor: pointer;
+}
+
+.clicking {
+  vertical-align: middle;
+}
+
+// color for symbol #5B616E

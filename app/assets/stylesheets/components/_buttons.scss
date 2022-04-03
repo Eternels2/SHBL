@@ -1,0 +1,119 @@
+.banner-btn {
+  border-radius: 28px;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px 20px;
+  background-color: white;
+  border: 2px solid #FF840A;
+  color: #FF840A;
+  text-decoration: none;
+  text-shadow: 0px 1px 1px rgba(0,0,0,0.2),
+}
+
+.banner-btn-filled {
+  border-radius: 28px;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px 20px;
+  background-color: #FF840A;
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  text-shadow: 0px 1px 1px rgba(0,0,0,0.2),
+}
+
+
+.banner-btn:hover {
+  text-decoration: none;
+  opacity: 0.8;
+  color: #FF840A;
+}
+
+.buy-btn-filled {
+  border-radius: 28px;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px;
+  background-color: #FF840A;
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  text-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+  height: 50px;
+  width: 100px;
+}
+.add-wl-btn {
+  border-radius: 28px;
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px 20px;
+  background-color: white;
+  border: none;
+  color: #FF840A;
+  text-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+  // height: 30px;
+  // width: 100px;
+  margin-bottom: 15px;
+  text-decoration: underline;
+
+}
+.sell-btn-filled {
+  border-radius: 28px;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 5px 5px;
+  background-color: #FF840A;
+  border: 2px solid white;
+  color: white;
+  text-decoration: none;
+  text-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+  min-height: 30px;
+  width: 120px;
+}
+.sell-btn-filled:hover {
+  text-decoration: none;
+  opacity: 0.8;
+  color: white;
+}
+.wl-inactive {
+  background-color:grey;
+  color: white;
+  border-radius: 28px;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px 20px;
+  border: none;
+
+}
+.wl-active {
+  background-color: #FF840A;
+  color: white;
+  border-radius: 28px;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px 20px;
+  border: none;
+}
+.disabled{
+  pointer-events: none;
+  cursor: not-allowed;
+  opacity: 0.65;
+  background-color: rgb(187, 184, 184);
+  color: grey;
+  border-color: rgb(187, 184, 184);
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  text-shadow: none;
+}
+
+#date-sim-show {
+  background-color: #FF840A;
+  border-radius: 20px;
+  border: none;
+}
+
+#date-sim-btn {
+padding: 0px;
+text-transform: capitalize;
+}

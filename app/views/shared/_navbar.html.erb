@@ -1,0 +1,75 @@
+<nav class="menu">
+  <div class="options">
+    <% if user_signed_in? %>
+      <ul>
+        <li>
+          <%= link_to 'Home', root_path%>
+        </li>
+        <li>
+          <%= link_to 'Dashboard', my_dashboard_path%>
+        </li>
+        <li>
+          <%= link_to 'Watchlist', watchlists_path%>
+        </li>
+        <li>
+          <%= link_to 'Browse Cryptos', cryptos_path%>
+        </li>
+        <li class="dropdown">
+            <button class="dropbtn">Learn More</button>
+            <div class="dropdown-content">
+              <%= link_to 'Jargon Buster', jargon_buster_path%>
+              <%= link_to 'Articles', articles_path%>
+            </div>
+        </li>
+        <li class ="nav-item dropdown">
+        <div class="dropdown">
+          <button class="btn btn-basic dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+
+            <img class="avatar-bordered nav-avatar" alt="avatar" src="https://avatars.githubusercontent.com/u/97609680?v=4" />
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete, class: "dropdown-item" %></li>
+
+            <li><%= link_to 'Reset Holdings',reset_holdings_path, data: { confirm: "Are you sure?" }, class: "dropdown-item" %></li>
+          </ul>
+        </div>
+        </li>
+      </ul>
+      <ul class="simulation-navbar">
+        <li style="margin-right:20px">
+          <h6>Simulation Date: <%= current_user.simulation_date.strftime('%d/%m/%Y') %></h6>
+        </li>
+        <li>
+          <%= link_to '+1 Day', change_simulation_path(current_user), style:'color:#FF840A', id:'date-sim-btn' %>
+        </li>
+        <li>
+          <h6>|</h6>
+        </li>
+        <li>
+          <%= link_to '+7 Days', change_simulation_week_path(current_user), style:'color:#FF840A', id:'date-sim-btn' %>
+        </li>
+        <li style="margin-left:20px">
+          <h6 style="color:#FF840A">Balance: $<%= number_with_precision(current_user.balance, :precision => 2, :delimiter => ',') %></h6>
+        </li>
+      </ul>
+    <% else %>
+    <% end %>
+  </div>
+  <%# Script to make it scroll back down to the part of the page you was on when it was clicked. %>
+  <%# the if statement says for it to only run on the cryptos controller index page %>
+  <% if params[:controller] == 'cryptos' && params[:action] == 'index' %>
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+            var scrollpos = sessionStorage.getItem('scrollpos');
+            if (scrollpos) {
+                window.scrollTo(0, scrollpos);
+                sessionStorage.removeItem('scrollpos');
+            }
+        });
+
+        window.addEventListener("beforeunload", function (e) {
+            sessionStorage.setItem('scrollpos', window.scrollY);
+        });
+    </script>
+  <% end %>
+</nav>

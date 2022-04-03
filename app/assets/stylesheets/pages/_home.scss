@@ -1,0 +1,158 @@
+// Specific CSS for your home-page
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  background: rgba(209, 208, 208, 0.185);
+}
+
+.landing-main {
+  padding-top: 35px;
+}
+
+.center {
+  text-align: center;
+}
+
+.info-container {
+  width: 90vw;
+  margin: auto;
+  padding: 30px;
+  margin-bottom: 100px;
+  background-color: white;
+  box-shadow: 0 1px 4px 0 rgba(31, 38, 135, 0.164);
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.027);
+}
+
+.features-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.members-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  font-family: "Cabin", sans-serif;
+  color: #ff840a;
+  opacity: 1;
+}
+
+p {
+  font-size: 18px;
+  font-family: "Cabin", sans-serif;
+}
+
+h5 {
+  margin-top: 20px;
+}
+
+.crypto-female {
+  width: 100%;
+  opacity: 0.8;
+}
+
+.feature-illustration {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.feature-card-link {
+  text-decoration: none;
+}
+
+.crypto-female {
+  opacity: 1;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.027);
+}
+
+.h2 {
+  font-family: "Cabin", sans-serif;
+  color: #ff840a;
+  opacity: 1;
+  text-decoration: none;
+}
+
+.h2:hover {
+  color: #ee851c7a;
+}
+
+.flex-wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.table {
+  background-color: white;
+  // box-shadow: 0 4px 16px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  border-radius: 12px;
+  border: 20px solid rgba(255, 255, 255, 0.027);
+  // font-size: 16px;
+}
+
+.table tr {
+  height: 60px;
+}
+
+#cryptos-table,
+#watchlist-table {
+  box-shadow: 0 1px 4px 0 rgba(31, 38, 135, 0.164);
+  margin-bottom: 50px;
+  font-size: 16px;
+}
+
+#cryptos-table tr {
+  height: 95px;
+}
+
+#cryptos-table,
+#watchlist-table tr {
+  height: 100px;
+}
+
+th td .graph-td {
+  position: relative;
+}
+
+.graph-td {
+  display: inline-block;
+}
+
+.graph-img-dashboard {
+  position: absolute;
+  left: 73% !important;
+}
+
+th .graph-header {
+  margin-left: 30px !important;
+}
+
+.white-space {
+  color: white;
+}
+
+.graph-img-cryptos {
+  position: absolute;
+  left: 53% !important;
+}
+
+.graph-img-watchlist {
+  position: absolute;
+  left: 51% !important;
+}
